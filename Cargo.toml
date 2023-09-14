@@ -1,0 +1,17 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2021"
+license = "GPL-2.0 OR BSD-3-Clause"
+
+[dependencies]
+anyhow = "1.0"
+ctrlc = { version = "3.0", features = ["termination"] }
+libc = "0.2"
+libbpf-rs = "0.19"
+structopt = "0.3"
+
+[build-dependencies]
+libbpf-cargo = "0.13"
